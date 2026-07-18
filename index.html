@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
 
 <meta charset="UTF-8">
@@ -8,36 +7,1724 @@
 
 <title>SLYWORD | Création Digitale Premium</title>
 
-<meta name="description" content="SLYWORD transforme vos photos et vos idées en créations visuelles modernes grâce au design et à l'intelligence artificielle.">
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Arial',sans-serif;
+}
+
+body{
+    background:#17191f;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* ===== HEADER ===== */
+
+header{
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    z-index:1000;
+    background:rgba(20,22,28,0.75);
+    backdrop-filter:blur(12px);
+}
+
+.logo{
+    font-size:30px;
+    font-weight:900;
+    color:#f5c542;
+    letter-spacing:2px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:16px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#f5c542;
+}
+
+
+/* ===== ACCUEIL ===== */
+
+.hero{
+
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 8% 50px;
+
+    background:
+    radial-gradient(circle at top left,#3a4055 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#9b7b22 0%,transparent 30%),
+    linear-gradient(135deg,#17191f,#292d38);
+
+}
+
+
+.hero-content{
+
+    max-width:900px;
+
+}
+
+
+.hero h1{
+
+    font-size:60px;
+    line-height:1.1;
+    margin-bottom:20px;
+
+}
+
+
+.hero h1 span{
+
+    color:#f5c542;
+
+}
+
+
+.hero p{
+
+    font-size:20px;
+    color:#dddddd;
+    line-height:1.6;
+    margin-bottom:35px;
+
+}
+
+
+.buttons{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+
+.btn{
+
+    padding:15px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+
+}
+
+
+.btn-primary{
+
+    background:linear-gradient(45deg,#f5c542,#ffe58a);
+    color:#17191f;
+
+}
+
+
+.btn-secondary{
+
+    border:2px solid #f5c542;
+    color:#f5c542;
+
+}
+
+
+.btn:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+/* ===== EFFET LUMIERE ===== */
+
+.hero::before{
+
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:#f5c542;
+    filter:blur(150px);
+    opacity:0.25;
+
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+
+<header>
+
+<div class="logo">
+SLYWORD
+</div>
+
+<nav>
+
+<a href="#">Accueil</a>
+<a href="#">Services</a>
+<a href="#">Galerie</a>
+<a href="#">Commande</a>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+Transformez vos idées en
+<span>créations exceptionnelles</span>
+</h1>
+
+
+<p>
+SLYWORD crée des visuels professionnels,
+des retouches photos, des designs modernes
+et des expériences digitales uniques.
+</p>
+
+
+<div class="buttons">
+
+<a href="#" class="btn btn-primary">
+Commander maintenant
+</a>
+
+
+<a href="#" class="btn btn-secondary">
+Découvrir nos créations
+</a>
+
+</div>
+
+
+</div>
+
+  </section><!-- ===== SECTION INTRODUCTION ===== -->
+
+<section class="intro">
+
+<div class="intro-box">
+
+<h2>
+Bienvenue chez <span>SLYWORD</span>
+</h2>
+
+<p>
+Nous transformons vos photos et vos idées en créations
+visuelles modernes, élégantes et professionnelles.
+Notre objectif est de donner une nouvelle valeur à
+chaque image.
+</p>
+
+</div>
+
+</section>
 
 
 <style>
 
-/* ===== RESET ===== */
+.intro{
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Segoe UI',Arial,sans-serif;
+padding:80px 8%;
+background:
+linear-gradient(
+135deg,
+#20242d,
+#303746
+);
+
+display:flex;
+justify-content:center;
+
 }
 
 
-html{
-scroll-behavior:smooth;
+.intro-box{
+
+max-width:900px;
+text-align:center;
+padding:45px;
+border-radius:25px;
+
+background:
+rgba(255,255,255,0.08);
+
+border:1px solid rgba(245,197,66,0.35);
+
+box-shadow:
+0 20px 50px rgba(0,0,0,0.35);
+
 }
 
 
-body{
+.intro h2{
 
-background:#050505;
+font-size:40px;
+margin-bottom:20px;
+
+}
+
+
+.intro h2 span{
+
+color:#f5c542;
+
+}
+
+
+.intro p{
+
+font-size:18px;
+line-height:1.8;
+color:#e5e5e5;
+
+}
+
+
+/* ===== RESPONSIVE TELEPHONE ===== */
+
+@media(max-width:768px){
+
+header{
+
+padding:18px 5%;
+
+}
+
+
+.logo{
+
+font-size:24px;
+
+}
+
+
+nav a{
+
+margin-left:10px;
+font-size:13px;
+
+}
+
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+
+.hero p{
+
+font-size:17px;
+
+}
+
+
+.intro h2{
+
+font-size:30px;
+
+}
+
+}
+
+</style>
+
+
+<!-- ===== FIN PARTIE 1 ===== -->
+
+
+</body>
+  </html><!-- ===== SERVICES SLYWORD ===== -->
+
+<section class="services" id="services">
+
+<div class="section-title">
+
+<h2>
+Nos <span>Services</span>
+</h2>
+
+<p>
+Des créations visuelles professionnelles adaptées
+à vos besoins.
+</p>
+
+</div>
+
+
+<div class="services-container">
+
+
+<div class="service-card">
+
+<img src="images/file_00000000cbd07243986506db52daa5c4.png" alt="Bébé">
+
+<h3>👶 Souvenirs Bébé</h3>
+
+<p>
+Création de souvenirs uniques pour immortaliser
+les moments importants de votre vie.
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<img src="images/file_00000000b6d871f4a90bb9a1b4a5c287.png" alt="Couple">
+
+<h3>❤️ Photos Couple</h3>
+
+<p>
+Transformation de vos photos en souvenirs
+élégants et romantiques.
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<img src="images/file_000000006d6c71fb8c058cf6665a3517.png" alt="Famille">
+
+<h3>👨‍👩‍👧 Photos Famille</h3>
+
+<p>
+Des portraits familiaux valorisés avec un rendu
+professionnel.
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<img src="images/file_00000000215871fda961bf82b17d9513.png" alt="Fond écran">
+
+<h3>🖼️ Fonds d'écran</h3>
+
+<p>
+Création de fonds d'écran personnalisés pour
+téléphone et ordinateur.
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<img src="images/file_00000000f40471f4ae5fe5978e3beb94.png" alt="Produits">
+
+<h3>🛍️ Photos Produits</h3>
+
+<p>
+Mise en valeur de vos produits avec des visuels
+professionnels.
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<img src="images/file_000000000ca87243a6387856093809eb.png" alt="Affiche">
+
+<h3>🎨 Affiches Publicitaires</h3>
+
+<p>
+Création d'affiches modernes pour vos activités
+et événements.
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<img src="images/file_000000000a5471f487ee81a59107ada6.png" alt="IA Design">
+
+<h3>🤖 IA Design</h3>
+
+<p>
+Créations artistiques et designs originaux
+grâce aux nouvelles technologies.
+</p>
+
+</div>
+
+
+</div>
+
+  </section><style>
+
+/* ===== SERVICES DESIGN ===== */
+
+.services{
+
+padding:100px 8%;
+
+background:
+linear-gradient(
+135deg,
+#1c2028,
+#343b4a
+);
+
+}
+
+
+.section-title{
+
+text-align:center;
+margin-bottom:50px;
+
+}
+
+
+.section-title h2{
+
+font-size:45px;
+margin-bottom:15px;
+
+}
+
+
+.section-title h2 span{
+
+color:#f5c542;
+
+}
+
+
+.section-title p{
+
+color:#dddddd;
+font-size:18px;
+
+}
+
+
+/* CONTENEUR DES CARTES */
+
+.services-container{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+}
+
+
+
+/* CARTE SERVICE */
+
+.service-card{
+
+background:
+rgba(255,255,255,0.09);
+
+border-radius:25px;
+
+overflow:hidden;
+
+border:1px solid rgba(245,197,66,0.25);
+
+box-shadow:
+0 15px 40px rgba(0,0,0,0.35);
+
+transition:0.4s;
+
+}
+
+
+
+.service-card:hover{
+
+transform:translateY(-12px);
+
+border-color:#f5c542;
+
+box-shadow:
+0 25px 60px rgba(245,197,66,0.18);
+
+}
+
+
+
+/* IMAGE */
+
+.service-card img{
+
+width:100%;
+
+height:230px;
+
+object-fit:cover;
+
+display:block;
+
+}
+
+
+
+/* TEXTE */
+
+.service-card h3{
+
+font-size:24px;
+
+padding:20px 20px 10px;
+
+color:#f5c542;
+
+}
+
+
+
+.service-card p{
+
+padding:0 20px 25px;
+
+line-height:1.6;
+
+color:#eeeeee;
+
+}
+
+
+
+/* ANIMATION APPARITION */
+
+.service-card{
+
+animation:
+apparition 0.8s ease forwards;
+
+}
+
+
+@keyframes apparition{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+/* TELEPHONE */
+
+@media(max-width:768px){
+
+
+.services{
+
+padding:70px 5%;
+
+}
+
+
+.section-title h2{
+
+font-size:32px;
+
+}
+
+
+.service-card img{
+
+height:200px;
+
+}
+
+
+.service-card h3{
+
+font-size:21px;
+
+}
+
+
+}
+
+
+</style>
+
+
+<!-- ===== FIN PARTIE SERVICES ===== --><!-- ===== GALERIE SLYWORD ===== -->
+
+<section class="galerie" id="galerie">
+
+<div class="section-title">
+
+<h2>
+Notre <span>Galerie</span>
+</h2>
+
+<p>
+Découvrez quelques exemples de nos créations visuelles.
+</p>
+
+</div>
+
+
+<div class="galerie-container">
+
+
+<div class="galerie-card">
+
+<img src="images/file_00000000cbd07243986506db52daa5c4.png" alt="Création bébé">
+
+<div class="galerie-text">
+
+<h3>👶 Souvenir Bébé</h3>
+
+<p>
+Transformation d'une simple photo en un souvenir
+plus élégant et professionnel.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="galerie-card">
+
+<img src="images/file_00000000b6d871f4a90bb9a1b4a5c287.png" alt="Création couple">
+
+<div class="galerie-text">
+
+<h3>❤️ Souvenir Couple</h3>
+
+<p>
+Des images personnalisées avec une ambiance
+plus artistique.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="galerie-card">
+
+<img src="images/file_000000006d6c71fb8c058cf6665a3517.png" alt="Création famille">
+
+<div class="galerie-text">
+
+<h3>👨‍👩‍👧 Souvenir Famille</h3>
+
+<p>
+Des moments importants transformés en belles
+créations.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="galerie-card">
+
+<img src="images/file_00000000f40471f4ae5fe5978e3beb94.png" alt="Produit professionnel">
+
+<div class="galerie-text">
+
+<h3>🛍️ Produit</h3>
+
+<p>
+Des présentations adaptées aux vendeurs et
+entrepreneurs.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="galerie-card">
+
+<img src="images/file_000000000ca87243a6387856093809eb.png" alt="Affiche">
+
+<div class="galerie-text">
+
+<h3>🎨 Affiche Publicitaire</h3>
+
+<p>
+Des designs modernes pour attirer l'attention.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="galerie-card">
+
+<img src="images/file_000000000a5471f487ee81a59107ada6.png" alt="IA Design">
+
+<div class="galerie-text">
+
+<h3>🤖 Création IA</h3>
+
+<p>
+Des créations originales avec une touche
+artistique.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+  </section><style>
+
+/* ===== GALERIE DESIGN ===== */
+
+.galerie{
+
+padding:100px 8%;
+
+background:
+linear-gradient(
+135deg,
+#151922,
+#2d3442
+);
+
+}
+
+
+
+.galerie-container{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+
+
+/* CARTE GALERIE */
+
+.galerie-card{
+
+background:
+rgba(255,255,255,0.08);
+
+border-radius:25px;
+
+overflow:hidden;
+
+border:1px solid rgba(245,197,66,0.25);
+
+box-shadow:
+0 15px 45px rgba(0,0,0,0.35);
+
+transition:0.4s;
+
+}
+
+
+
+.galerie-card:hover{
+
+transform:scale(1.03);
+
+border-color:#f5c542;
+
+box-shadow:
+0 25px 70px rgba(245,197,66,0.2);
+
+}
+
+
+
+/* IMAGE */
+
+.galerie-card img{
+
+width:100%;
+
+height:260px;
+
+object-fit:cover;
+
+}
+
+
+
+/* TEXTE */
+
+.galerie-text{
+
+padding:25px;
+
+}
+
+
+
+.galerie-text h3{
+
+color:#f5c542;
+
+font-size:24px;
+
+margin-bottom:12px;
+
+}
+
+
+
+.galerie-text p{
+
+color:#eeeeee;
+
+line-height:1.6;
+
+}
+
+
+
+/* EFFET LUMIERE */
+
+.galerie-card::after{
+
+content:"";
+
+display:block;
+
+height:3px;
+
+width:0;
+
+background:#f5c542;
+
+transition:0.4s;
+
+}
+
+
+
+.galerie-card:hover::after{
+
+width:100%;
+
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+
+.galerie{
+
+padding:70px 5%;
+
+}
+
+
+.galerie-card img{
+
+height:220px;
+
+}
+
+
+.galerie-text h3{
+
+font-size:21px;
+
+}
+
+
+}
+
+</style>
+
+
+<!-- ===== FIN PARTIE GALERIE ===== -->
+<!-- ===== COMMANDE SLYWORD ===== -->
+
+<section class="commande" id="commande">
+
+<div class="section-title">
+
+<h2>
+Passez votre <span>Commande</span>
+</h2>
+
+<p>
+Décrivez votre projet et contactez-nous rapidement.
+</p>
+
+</div>
+
+
+<div class="commande-box">
+
+
+<form id="commandeForm">
+
+
+<input 
+type="text" 
+id="nom"
+placeholder="Votre nom"
+required>
+
+
+<input 
+type="tel" 
+id="telephone"
+placeholder="Votre numéro WhatsApp"
+required>
+
+
+<select id="service" required>
+
+<option value="">
+Choisir un service
+</option>
+
+<option>
+Souvenir Bébé
+</option>
+
+<option>
+Photo Couple
+</option>
+
+<option>
+Photo Famille
+</option>
+
+<option>
+Fond d'écran personnalisé
+</option>
+
+<option>
+Photo Produit
+</option>
+
+<option>
+Affiche Publicitaire
+</option>
+
+<option>
+IA Design
+</option>
+
+</select>
+
+
+
+<textarea 
+id="message"
+placeholder="Décrivez votre demande..."
+required>
+</textarea>
+
+
+
+<button type="submit">
+
+Envoyer la commande sur WhatsApp
+
+</button>
+
+
+</form>
+
+
+</div>
+
+  </section><style>
+
+/* ===== DESIGN COMMANDE ===== */
+
+.commande{
+
+padding:100px 8%;
+
+background:
+linear-gradient(
+135deg,
+#20242d,
+#343b4a
+);
+
+}
+
+
+
+.commande-box{
+
+max-width:650px;
+
+margin:auto;
+
+padding:40px;
+
+background:
+rgba(255,255,255,0.09);
+
+border-radius:30px;
+
+border:1px solid rgba(245,197,66,0.3);
+
+box-shadow:
+0 20px 60px rgba(0,0,0,0.4);
+
+}
+
+
+
+/* FORMULAIRE */
+
+#commandeForm{
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+
+
+#commandeForm input,
+#commandeForm select,
+#commandeForm textarea{
+
+width:100%;
+
+padding:16px;
+
+border-radius:15px;
+
+border:none;
+
+outline:none;
+
+font-size:16px;
+
+background:#ffffff;
+
+color:#222;
+
+}
+
+
+
+#commandeForm textarea{
+
+height:130px;
+
+resize:none;
+
+}
+
+
+
+#commandeForm button{
+
+padding:18px;
+
+border:none;
+
+border-radius:40px;
+
+background:
+linear-gradient(
+45deg,
+#f5c542,
+#ffe89a
+);
+
+font-size:17px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+
+
+#commandeForm button:hover{
+
+transform:translateY(-5px);
+
+box-shadow:
+0 10px 30px rgba(245,197,66,0.35);
+
+}
+
+
+
+/* ANIMATION */
+
+.commande-box{
+
+animation:
+montee 1s ease;
+
+}
+
+
+@keyframes montee{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+/* TELEPHONE */
+
+@media(max-width:768px){
+
+.commande{
+
+padding:70px 5%;
+
+}
+
+
+.commande-box{
+
+padding:25px;
+
+}
+
+}
+
+</style>
+
+
+
+<script>
+
+
+document
+.getElementById("commandeForm")
+.addEventListener(
+"submit",
+function(e){
+
+
+e.preventDefault();
+
+
+
+let nom =
+document.getElementById("nom").value;
+
+
+let telephone =
+document.getElementById("telephone").value;
+
+
+let service =
+document.getElementById("service").value;
+
+
+let message =
+document.getElementById("message").value;
+
+
+
+let numero =
+"2290147180865";
+
+
+
+let texte =
+"Bonjour SLYWORD 👋%0A%0A"
++
+"Nom : "
++ nom
++
+"%0A"
++
+"Téléphone : "
++ telephone
++
+"%0A"
++
+"Service : "
++ service
++
+"%0A"
++
+"Demande : "
++ message;
+
+
+
+window.open(
+"https://wa.me/"
++
+numero
++
+"?text="
++
+texte,
+"_blank"
+);
+
+
+});
+
+
+</script><!-- ===== TARIFS SLYWORD ===== -->
+
+<section class="tarifs" id="tarifs">
+
+
+<div class="section-title">
+
+<h2>
+Nos <span>Tarifs</span>
+</h2>
+
+<p>
+Des services accessibles avec une qualité professionnelle.
+</p>
+
+</div>
+
+
+
+<div class="tarifs-container">
+
+
+
+<div class="tarif-card">
+
+<h3>✨ Retouche Simple</h3>
+
+<div class="prix">
+À partir de 500F
+</div>
+
+<p>
+Amélioration d'une photo,
+correction de lumière et rendu plus professionnel.
+</p>
+
+</div>
+
+
+
+
+<div class="tarif-card">
+
+<h3>🔥 Création Premium</h3>
+
+<div class="prix">
+À partir de 1000F
+</div>
+
+<p>
+Design plus avancé,
+création artistique et visuel personnalisé.
+</p>
+
+</div>
+
+
+
+
+<div class="tarif-card">
+
+<h3>🚀 Pack Business</h3>
+
+<div class="prix">
+Sur devis
+</div>
+
+<p>
+Photos produits, affiches publicitaires
+et créations pour développer votre activité.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- ===== POURQUOI SLYWORD ===== -->
+
+
+<section class="avantages">
+
+
+<div class="section-title">
+
+<h2>
+Pourquoi choisir <span>SLYWORD</span> ?
+</h2>
+
+</div>
+
+
+
+<div class="avantages-container">
+
+
+<div class="avantage">
+
+<h3>🎨 Créativité</h3>
+
+<p>
+Des créations originales adaptées à votre vision.
+</p>
+
+</div>
+
+
+
+<div class="avantage">
+
+<h3>⚡ Rapidité</h3>
+
+<p>
+Un service simple et efficace pour vos projets.
+</p>
+
+</div>
+
+
+
+<div class="avantage">
+
+<h3>💎 Qualité</h3>
+
+<p>
+Des visuels modernes avec une finition professionnelle.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section><style>
+
+/* ===== TARIFS DESIGN ===== */
+
+.tarifs{
+
+padding:100px 8%;
+
+background:
+linear-gradient(
+135deg,
+#171b23,
+#303746
+);
+
+}
+
+
+
+.tarifs-container{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+}
+
+
+
+/* CARTES TARIFS */
+
+.tarif-card{
+
+padding:35px 25px;
+
+text-align:center;
+
+background:
+rgba(255,255,255,0.08);
+
+border-radius:25px;
+
+border:1px solid rgba(245,197,66,0.3);
+
+box-shadow:
+0 20px 50px rgba(0,0,0,0.35);
+
+transition:0.4s;
+
+}
+
+
+
+.tarif-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#f5c542;
+
+}
+
+
+
+.tarif-card h3{
+
+color:#f5c542;
+
+font-size:24px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.prix{
+
+font-size:32px;
+
+font-weight:bold;
+
 color:white;
-overflow-x:hidden;
+
+margin-bottom:20px;
 
 }
 
 
-/* ===== FOND LUMINEUX ===== */
+
+.tarif-card p{
+
+color:#dddddd;
+
+line-height:1.6;
+
+}
+
+
+
+/* ===== AVANTAGES ===== */
+
+
+.avantages{
+
+padding:90px 8%;
+
+background:
+#222733;
+
+}
+
+
+
+.avantages-container{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+}
+
+
+
+.avantage{
+
+padding:30px;
+
+background:
+rgba(255,255,255,0.07);
+
+border-radius:20px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,0.1);
+
+transition:0.3s;
+
+}
+
+
+
+.avantage:hover{
+
+background:
+rgba(245,197,66,0.12);
+
+transform:scale(1.05);
+
+}
+
+
+
+.avantage h3{
+
+color:#f5c542;
+
+margin-bottom:15px;
+
+font-size:22px;
+
+}
+
+
+
+.avantage p{
+
+color:#eeeeee;
+
+line-height:1.6;
+
+}
+
+
+
+/* TELEPHONE */
+
+@media(max-width:768px){
+
+
+.tarifs,
+.avantages{
+
+padding:70px 5%;
+
+}
+
+
+.tarif-card{
+
+padding:30px 20px;
+
+}
+
+
+.prix{
+
+font-size:27px;
+
+}
+
+}
+
+
+</style>
+
+
+<!-- ===== FIN PARTIE TARIFS ET AVANTAGES ===== -->
+
+
+<!-- ===== FIN PARTIE COMMANDE ===== --><!-- ===== EFFETS PREMIUM SLYWORD ===== -->
+
+
+<style>
+
+
+/* ===== EFFET DE LUMIERE GLOBAL ===== */
 
 
 body::before{
@@ -46,20 +1733,21 @@ content:"";
 
 position:fixed;
 
-width:600px;
-height:600px;
+top:-150px;
 
-background:
-radial-gradient(circle,
-rgba(255,215,0,0.25),
-transparent 70%);
+left:-150px;
 
-top:-200px;
-left:-200px;
+width:400px;
+
+height:400px;
+
+background:#f5c542;
+
+filter:blur(180px);
+
+opacity:0.12;
 
 z-index:-1;
-
-animation:moveLight 8s infinite alternate;
 
 }
 
@@ -71,1807 +1759,44 @@ content:"";
 
 position:fixed;
 
-width:500px;
-height:500px;
-
-background:
-radial-gradient(circle,
-rgba(0,170,255,0.18),
-transparent 70%);
-
 bottom:-150px;
+
 right:-150px;
+
+width:450px;
+
+height:450px;
+
+background:#3b82f6;
+
+filter:blur(180px);
+
+opacity:0.10;
 
 z-index:-1;
 
-animation:moveLight2 10s infinite alternate;
-
-}
-
-
-
-@keyframes moveLight{
-
-from{
-transform:translate(0,0);
-}
-
-to{
-transform:translate(150px,100px);
-}
-
-}
-
-
-
-@keyframes moveLight2{
-
-from{
-transform:translate(0,0);
-}
-
-to{
-transform:translate(-120px,-80px);
-}
-
 }
 
 
 
 
 
-/* ===== NAVIGATION ===== */
+/* ===== APPARITION AU SCROLL ===== */
 
 
-nav{
-
-position:fixed;
-
-top:0;
-
-left:0;
-
-width:100%;
-
-padding:20px 8%;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-background:rgba(5,5,5,0.75);
-
-backdrop-filter:blur(15px);
-
-z-index:1000;
-
-border-bottom:1px solid rgba(255,215,0,.2);
-
-}
-
-
-
-.logo{
-
-font-size:32px;
-
-font-weight:900;
-
-letter-spacing:3px;
-
-color:#FFD700;
-
-}
-
-
-
-nav ul{
-
-display:flex;
-
-gap:30px;
-
-list-style:none;
-
-}
-
-
-
-nav a{
-
-color:white;
-
-text-decoration:none;
-
-transition:.3s;
-
-}
-
-
-
-nav a:hover{
-
-color:#FFD700;
-
-}
-
-
-
-
-/* ===== HERO ===== */
-
-
-.hero{
-
-min-height:100vh;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-text-align:center;
-
-padding:120px 20px 50px;
-
-position:relative;
-
-}
-
-
-
-.hero-content{
-
-max-width:900px;
-
-}
-
-
-
-.hero h1{
-
-font-size:75px;
-
-letter-spacing:8px;
-
-background:
-linear-gradient(
-90deg,
-#FFD700,
-#fff,
-#FFD700
-);
-
--webkit-background-clip:text;
-
-color:transparent;
-
-animation:titleGlow 3s infinite;
-
-}
-
-
-
-@keyframes titleGlow{
-
-
-0%,100%{
-
-filter:drop-shadow(0 0 10px gold);
-
-}
-
-
-50%{
-
-filter:drop-shadow(0 0 35px gold);
-
-}
-
-
-}
-
-
-
-
-
-.hero h2{
-
-font-size:30px;
-
-margin:25px 0;
-
-color:#ddd;
-
-}
-
-
-
-.hero p{
-
-font-size:20px;
-
-line-height:1.7;
-
-color:#aaa;
-
-}
-
-
-
-
-
-/* ===== BOUTON ===== */
-
-
-.main-btn{
-
-display:inline-block;
-
-margin-top:40px;
-
-padding:18px 40px;
-
-border-radius:50px;
-
-background:
-linear-gradient(
-45deg,
-#FFD700,
-#ff9900
-);
-
-color:black;
-
-font-weight:bold;
-
-text-decoration:none;
-
-transition:.4s;
-
-}
-
-
-
-.main-btn:hover{
-
-transform:scale(1.08);
-
-box-shadow:
-0 0 40px gold;
-
-}
-
-
-
-
-
-/* ===== ELEMENTS FLOTTANTS ===== */
-
-
-.circle{
-
-position:absolute;
-
-border-radius:50%;
-
-border:1px solid rgba(255,215,0,.3);
-
-animation:rotate 15s linear infinite;
-
-}
-
-
-
-.circle.one{
-
-width:300px;
-height:300px;
-
-top:20%;
-left:5%;
-
-}
-
-
-
-.circle.two{
-
-width:200px;
-height:200px;
-
-bottom:15%;
-right:8%;
-
-}
-
-
-
-@keyframes rotate{
-
-from{
-
-transform:rotate(0deg);
-
-}
-
-to{
-
-transform:rotate(360deg);
-
-}
-
-}
-
-
-
-
-/* ===== MOBILE ===== */
-
-
-@media(max-width:700px){
-
-
-nav{
-
-padding:15px 20px;
-
-}
-
-
-nav ul{
-
-display:none;
-
-}
-
-
-
-.logo{
-
-font-size:25px;
-
-}
-
-
-.hero h1{
-
-font-size:45px;
-
-letter-spacing:4px;
-
-}
-
-
-
-.hero h2{
-
-font-size:22px;
-
-}
-
-
-
-}
-
-
-</style>
-
-
-</head>
-
-
-<body>
-
-
-
-<nav>
-
-<div class="logo">
-SLYWORD
-</div>
-
-
-<ul>
-
-<li>
-<a href="#services">
-Services
-</a>
-</li>
-
-
-<li>
-<a href="#galerie">
-Galerie
-</a>
-</li>
-
-
-<li>
-<a href="#commande">
-Commande
-</a>
-</li>
-
-
-<li>
-<a href="#contact">
-Contact
-</a>
-</li>
-
-
-</ul>
-
-
-</nav>
-
-
-
-
-
-<section class="hero">
-
-
-<div class="circle one"></div>
-
-<div class="circle two"></div>
-
-
-
-<div class="hero-content">
-
-
-<h1>
-SLYWORD
-</h1>
-
-
-<h2>
-L'art de transformer vos idées en images exceptionnelles
-</h2>
-
-
-<p>
-
-Nous sublimons vos souvenirs et valorisons votre activité
-grâce au design, à la créativité et aux nouvelles technologies.
-
-</p>
-
-
-
-<a href="#galerie" class="main-btn">
-
-Découvrir notre univers
-
-</a>
-
-
-</div>
-
-
-
-  </section>
-  <!-- ===== SERVICES ===== -->
-
-<section id="services" class="services">
-
-<div class="section-title">
-
-<h2>
-Nos Services
-</h2>
-
-<p>
-Des créations visuelles pensées pour vos souvenirs et votre activité.
-</p>
-
-</div>
-
-
-<div class="service-grid">
-
-
-<div class="service-card">
-
-<h3>📸 Retouche Photo Premium</h3>
-
-<p>
-Transformation de vos photos simples en images professionnelles.
-</p>
-
-</div>
-
-
-
-<div class="service-card">
-
-<h3>🛍️ Visuels Commerciaux</h3>
-
-<p>
-Des images modernes pour présenter vos produits et attirer vos clients.
-</p>
-
-</div>
-
-
-
-<div class="service-card">
-
-<h3>🎨 Création Publicitaire</h3>
-
-<p>
-Affiches, publications réseaux sociaux et contenus marketing.
-</p>
-
-</div>
-
-
-
-<div class="service-card">
-
-<h3>🤖 Création IA</h3>
-
-<p>
-Des concepts uniques grâce à la créativité et aux nouvelles technologies.
-</p>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-
-
-<!-- ===== GALERIE ===== -->
-
-
-<section id="galerie" class="gallery">
-
-
-<div class="section-title">
-
-<h2>
-Galerie SLYWORD
-</h2>
-
-
-<p>
-Découvrez la transformation d'une image simple en création exceptionnelle.
-</p>
-
-
-</div>
-
-
-
-
-<div class="gallery-grid">
-
-
-
-<div class="gallery-card">
-
-
-<h3>
-👶 Photo Bébé
-</h3>
-
-
-<div class="before-after">
-
-
-<div>
-
-<span>
-Avant
-</span>
-
-<img src="images/bebe-avant.jpg"
-alt="Photo bébé avant">
-
-</div>
-
-
-
-<div>
-
-<span>
-Après
-</span>
-
-<img src="images/bebe-apres.jpg"
-alt="Photo bébé après">
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="gallery-card">
-
-
-<h3>
-❤️ Photo Couple
-</h3>
-
-
-<div class="before-after">
-
-
-<div>
-
-<span>
-Avant
-</span>
-
-<img src="images/couple-avant.jpg"
-alt="Photo couple avant">
-
-</div>
-
-
-
-<div>
-
-<span>
-Après
-</span>
-
-<img src="images/couple-apres.jpg"
-alt="Photo couple après">
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="gallery-card">
-
-
-<h3>
-👨‍👩‍👧 Photo Famille
-</h3>
-
-
-<div class="before-after">
-
-
-<div>
-
-<span>
-Avant
-</span>
-
-<img src="images/famille-avant.jpg"
-alt="Famille avant">
-
-</div>
-
-
-
-<div>
-
-<span>
-Après
-</span>
-
-<img src="images/famille-apres.jpg"
-alt="Famille après">
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="gallery-card">
-
-
-<h3>
-📦 Produit Commerce
-</h3>
-
-
-<div class="before-after">
-
-
-<div>
-
-<span>
-Avant
-</span>
-
-<img src="images/produit-avant.jpg"
-alt="Produit avant">
-
-</div>
-
-
-
-<div>
-
-<span>
-Après
-</span>
-
-<img src="images/produit-apres.jpg"
-alt="Produit après">
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="gallery-card">
-
-
-<h3>
-🎨 Affiche Publicitaire
-</h3>
-
-
-<div class="before-after">
-
-
-<div>
-
-<span>
-Avant
-</span>
-
-<img src="images/pub-avant.jpg"
-alt="Publicité avant">
-
-</div>
-
-
-
-<div>
-
-<span>
-Après
-</span>
-
-<img src="images/pub-apres.jpg"
-alt="Publicité après">
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<style>
-
-
-/* SERVICES */
-
-
-.services,
-.gallery{
-
-padding:80px 8%;
-
-}
-
-
-
-.section-title{
-
-text-align:center;
-
-margin-bottom:50px;
-
-}
-
-
-
-.section-title h2{
-
-font-size:45px;
-
-color:#FFD700;
-
-margin-bottom:15px;
-
-}
-
-
-
-.section-title p{
-
-color:#aaa;
-
-font-size:18px;
-
-}
-
-
-
-
-.service-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-
-gap:25px;
-
-}
-
-
-
-.service-card{
-
-background:
-rgba(255,255,255,.05);
-
-padding:30px;
-
-border-radius:20px;
-
-border:1px solid rgba(255,215,0,.2);
-
-transition:.4s;
-
-}
-
-
-
-.service-card:hover{
-
-transform:translateY(-10px);
-
-box-shadow:
-0 0 30px rgba(255,215,0,.3);
-
-}
-
-
-
-
-.service-card h3{
-
-color:#FFD700;
-
-margin-bottom:15px;
-
-}
-
-
-
-
-
-/* GALERIE */
-
-
-.gallery-grid{
-
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(320px,1fr));
-
-gap:35px;
-
-}
-
-
-
-.gallery-card{
-
-background:
-rgba(255,255,255,.05);
-
-padding:25px;
-
-border-radius:25px;
-
-border:1px solid rgba(255,215,0,.25);
-
-transition:.4s;
-
-}
-
-
-
-.gallery-card:hover{
-
-transform:scale(1.03);
-
-box-shadow:
-0 0 40px rgba(255,215,0,.25);
-
-}
-
-
-
-.gallery-card h3{
-
-text-align:center;
-
-color:#FFD700;
-
-margin-bottom:25px;
-
-}
-
-
-
-.before-after{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:15px;
-
-}
-
-
-
-.before-after div{
-
-text-align:center;
-
-}
-
-
-
-.before-after span{
-
-display:block;
-
-margin-bottom:10px;
-
-color:#fff;
-
-font-weight:bold;
-
-}
-
-
-
-.before-after img{
-
-width:100%;
-
-height:220px;
-
-object-fit:cover;
-
-border-radius:15px;
-
-border:2px solid rgba(255,215,0,.4);
-
-}
-
-
-
-
-
-@media(max-width:700px){
-
-
-.section-title h2{
-
-font-size:32px;
-
-}
-
-
-.before-after{
-
-grid-template-columns:1fr;
-  
-
-}
-
-
-}
-
-  </style><!-- ===== COMMANDE SLYWORD ===== -->
-
-<section id="commande" class="order">
-
-
-<div class="section-title">
-
-<h2>
-Créer votre projet avec SLYWORD
-</h2>
-
-<p>
-Décrivez votre besoin et recevez une réponse rapidement.
-</p>
-
-</div>
-
-
-
-
-<div class="order-box">
-
-
-<form id="orderForm">
-
-
-<label>
-Nom complet
-</label>
-
-<input 
-type="text"
-id="name"
-placeholder="Votre nom"
-required>
-
-
-<label>
-Vous êtes :</label>
-
-
-<select id="clientType">
-
-<option>
-Particulier
-</option>
-
-<option>
-Entreprise / Commerce
-</option>
-
-</select>
-
-
-
-<label>
-Votre numéro WhatsApp
-</label>
-
-<input
-
-type="tel"
-
-id="phone"
-
-placeholder="Votre numéro"
-
-required>
-
-
-
-<label>
-Service souhaité
-</label>
-
-
-<select id="service">
-
-
-<option>
-Retouche photo premium
-</option>
-
-
-<option>
-Photo bébé
-</option>
-
-
-<option>
-Photo couple
-</option>
-
-
-<option>
-Photo famille
-</option>
-
-
-<option>
-Photo produit commerce
-</option>
-
-
-<option>
-Affiche publicitaire
-</option>
-
-
-<option>
-Création personnalisée IA
-</option>
-
-
-</select>
-
-
-
-
-
-<label>
-Décrivez votre projet
-</label>
-
-
-<textarea
-
-id="message"
-
-placeholder="Expliquez ce que vous souhaitez créer..."
-
-rows="5"
-
-required>
-
-</textarea>
-
-
-
-
-
-<button type="submit">
-
-📲 Envoyer ma demande
-
-</button>
-
-
-
-</form>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<style>
-
-
-/* ===== FORMULAIRE COMMANDE ===== */
-
-
-.order{
-
-padding:80px 8%;
-
-}
-
-
-
-
-.order-box{
-
-
-max-width:700px;
-
-margin:auto;
-
-background:
-
-rgba(255,255,255,.06);
-
-padding:35px;
-
-border-radius:25px;
-
-border:
-
-1px solid rgba(255,215,0,.3);
-
-
-box-shadow:
-
-0 0 40px rgba(255,215,0,.15);
-
-}
-
-
-
-
-.order-box label{
-
-
-display:block;
-
-margin-top:20px;
-
-margin-bottom:8px;
-
-color:#FFD700;
-
-font-weight:bold;
-
-
-}
-
-
-
-
-.order-box input,
-
-.order-box select,
-
-.order-box textarea{
-
-
-width:100%;
-
-padding:15px;
-
-border-radius:12px;
-
-border:none;
-
-outline:none;
-
-background:#111;
-
-color:white;
-
-font-size:16px;
-
-
-}
-
-
-
-
-.order-box textarea{
-
-resize:none;
-
-}
-
-
-
-
-
-.order-box button{
-
-
-margin-top:30px;
-
-width:100%;
-
-padding:18px;
-
-border:none;
-
-border-radius:50px;
-
-
-background:
-
-linear-gradient(
-
-45deg,
-
-#FFD700,
-
-#ff9900
-
-);
-
-
-font-size:18px;
-
-font-weight:bold;
-
-cursor:pointer;
-
-
-transition:.3s;
-
-
-}
-
-
-
-
-
-.order-box button:hover{
-
-
-transform:scale(1.05);
-
-
-box-shadow:
-
-0 0 30px gold;
-
-
-}
-
-
-
-</style>
-
-
-
-
-
-
-
-<script>
-
-
-// ===== ENVOI WHATSAPP =====
-
-
-
-document
-.getElementById("orderForm")
-.addEventListener(
-"submit",
-
-function(e){
-
-
-
-e.preventDefault();
-
-
-
-
-let name = 
-document.getElementById("name").value;
-
-
-
-let type = 
-document.getElementById("clientType").value;
-
-
-
-let phone = 
-document.getElementById("phone").value;
-
-
-
-let service = 
-document.getElementById("service").value;
-
-
-
-let message = 
-document.getElementById("message").value;
-
-
-
-
-
-let whatsappMessage =
-
-`
-Bonjour SLYWORD 👋✨
-
-Je souhaite commander un service.
-
-👤 Nom : ${name}
-
-🏷️ Type : ${type}
-
-📱 WhatsApp : ${phone}
-
-🎨 Service :
-${service}
-
-💡 Projet :
-${message}
-
-
-Merci.
-`;
-
-
-
-
-
-let number = "2290147180865";
-
-
-
-let url =
-
-"https://wa.me/"
-
-+ number
-
-+
-
-"?text="
-
-+
-
-encodeURIComponent(whatsappMessage);
-
-
-
-
-
-window.open(url,"_blank");
-
-
-
-}
-
-);
-
-
-
-  </script><!-- ===== TARIFS ===== -->
-
-<section class="pricing">
-
-
-<div class="section-title">
-
-<h2>
-Nos offres
-</h2>
-
-<p>
-Des solutions adaptées aux particuliers et aux entreprises.
-</p>
-
-</div>
-
-
-
-<div class="pricing-grid">
-
-
-
-<div class="price-card">
-
-<h3>
-📸 Souvenir
-</h3>
-
-<h4>
-À partir de 500 FCFA
-</h4>
-
-<p>
-✔ Retouche photo<br>
-✔ Amélioration qualité HD<br>
-✔ Création souvenir personnalisée
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="price-card premium">
-
-
-<h3>
-⭐ Premium
-</h3>
-
-
-<h4>
-À partir de 1000 FCFA
-</h4>
-
-
-<p>
-
-✔ Retouche avancée<br>
-✔ Montage créatif<br>
-✔ Effets professionnels<br>
-✔ Rendu haut de gamme
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-<div class="price-card">
-
-
-<h3>
-🏢 Business
-</h3>
-
-
-<h4>
-Sur devis
-</h4>
-
-
-<p>
-
-✔ Photos produits<br>
-✔ Affiches publicitaires<br>
-✔ Visuels réseaux sociaux<br>
-✔ Solutions commerciales
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- ===== POURQUOI SLYWORD ===== -->
-
-
-<section class="why">
-
-
-<div class="section-title">
-
-<h2>
-Pourquoi choisir SLYWORD ?
-</h2>
-
-</div>
-
-
-
-
-<div class="why-grid">
-
-
-
-<div class="why-card">
-
-<h3>
-✨ Créativité
-</h3>
-
-<p>
-Nous transformons vos idées en créations visuelles uniques.
-</p>
-
-</div>
-
-
-
-
-<div class="why-card">
-
-<h3>
-🤖 Technologie
-</h3>
-
-<p>
-Nous utilisons les outils modernes pour améliorer vos images.
-</p>
-
-</div>
-
-
-
-
-<div class="why-card">
-
-<h3>
-🎯 Qualité
-</h3>
-
-<p>
-Chaque création est pensée pour attirer l'attention.
-</p>
-
-</div>
-
-
-
-
-<div class="why-card">
-
-<h3>
-⚡ Rapidité
-</h3>
-
-<p>
-Un service simple, accessible et adapté à vos besoins.
-</p>
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- ===== VISION ===== -->
-
-
-<section class="vision">
-
-
-<div class="vision-box">
-
-
-<h2>
-Plus qu'une image, une nouvelle expérience.
-</h2>
-
-
-<p>
-
-Chez SLYWORD, nous croyons qu'une simple photo peut raconter une histoire,
-valoriser un souvenir ou aider une activité à attirer plus de clients.
-
-Grâce au design, à la créativité et à l'intelligence artificielle,
-nous donnons une nouvelle dimension à vos images.
-
-</p>
-
-
-<a href="#commande" class="main-btn">
-
-Créer mon projet
-
-</a>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<!-- ===== CONTACT ===== -->
-
-
-<section id="contact" class="contact">
-
-
-<div class="section-title">
-
-<h2>
-Contactez SLYWORD
-</h2>
-
-<p>
-Nous sommes disponibles pour réaliser vos projets.
-</p>
-
-
-</div>
-
-
-
-
-<div class="contact-box">
-
-
-<p>
-📱 WhatsApp :
-<strong>
-0147180865
-</strong>
-</p>
-
-
-<p>
-📧 Email :
-<strong>
-gedeonalonomba@gmail.com
-</strong>
-</p>
-
-
-<p>
-🇧🇯 B<!-- ===== ANIMATION APPARITION ===== -->
-
-
-<style>
-
-
-.fade{
+.fade-in{
 
 opacity:0;
 
 transform:translateY(40px);
 
-transition:1s;
+transition:1s ease;
 
 }
 
 
 
-.fade.show{
+.fade-in.active{
 
 opacity:1;
 
@@ -1882,174 +1807,151 @@ transform:translateY(0);
 
 
 
-/* ===== CHARGEMENT ===== */
+
+/* ===== BOUTONS PLUS PREMIUM ===== */
 
 
-.loader{
+.btn-primary{
+
+position:relative;
+
+overflow:hidden;
+
+}
 
 
-position:fixed;
+
+.btn-primary::before{
+
+content:"";
+
+position:absolute;
 
 top:0;
 
-left:0;
+left:-100%;
 
 width:100%;
 
 height:100%;
 
-background:#050505;
+background:
+rgba(255,255,255,0.35);
 
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-z-index:9999;
-
+transition:0.5s;
 
 }
 
 
 
-.loader h1{
+.btn-primary:hover::before{
 
-
-font-size:50px;
-
-color:#FFD700;
-
-letter-spacing:8px;
-
-animation:pulse 1.5s infinite;
-
+left:100%;
 
 }
 
 
 
-@keyframes pulse{
+
+
+/* ===== CARTES AVEC PROFONDEUR ===== */
+
+
+.service-card,
+.galerie-card,
+.tarif-card,
+.avantage{
+
+backdrop-filter:blur(10px);
+
+}
+
+
+
+
+
+/* ===== LOGO ANIMATION ===== */
+
+
+.logo{
+
+animation:
+
+brillanceLogo 3s infinite;
+
+}
+
+
+
+@keyframes brillanceLogo{
 
 
 0%,100%{
 
-opacity:.4;
-
-transform:scale(1);
+text-shadow:
+0 0 5px #f5c542;
 
 }
 
 
 50%{
 
-opacity:1;
-
-transform:scale(1.1);
-
-}
-
+text-shadow:
+0 0 25px #f5c542,
+0 0 45px #f5c542;
 
 }
-
-
-
-
-
-/* ===== FOOTER ===== */
-
-
-
-footer{
-
-
-background:#020202;
-
-padding:40px 20px;
-
-text-align:center;
-
-border-top:
-
-1px solid rgba(255,215,0,.2);
 
 
 }
 
 
 
-footer h2{
 
 
-color:#FFD700;
-
-letter-spacing:3px;
-
-margin-bottom:15px;
+/* ===== IMAGE HOVER ===== */
 
 
-}
+.service-card img,
+.galerie-card img{
 
-
-
-footer p{
-
-
-color:#aaa;
+transition:0.5s;
 
 }
 
 
 
-</style>
+.service-card:hover img,
+.galerie-card:hover img{
+
+transform:scale(1.08);
+
+}
 
 
 
 
 
+/* ===== DEFILEMENT DOUX ===== */
 
 
-<!-- ===== FOOTER ===== -->
+html{
 
+scroll-behavior:smooth;
 
-<footer>
-
-
-<h2>
-SLYWORD
-</h2>
-
-
-<p>
-Créativité • Design • Intelligence Artificielle
-</p>
-
-
-<p>
-© 2026 SLYWORD — Tous droits réservés 🇧🇯
-</p>
-
-
-</footer>
+}
 
 
 
 
+  </style><script>
 
 
-
-
-<!-- ===== SCRIPT FINAL ===== -->
-
-
-<script>
-
-
-// Animation au scroll
+/* ===== ANIMATION AU SCROLL ===== */
 
 
 const elements = document.querySelectorAll(
-"section, .service-card, .gallery-card, .price-card, .why-card"
+".service-card, .galerie-card, .tarif-card, .avantage, .intro-box"
 );
 
 
@@ -2065,14 +1967,7 @@ entries.forEach(entry=>{
 if(entry.isIntersecting){
 
 
-entry.target.classList.add("fade");
-
-setTimeout(()=>{
-
-entry.target.classList.add("show");
-
-},100);
-
+entry.target.classList.add("active");
 
 
 }
@@ -2089,48 +1984,19 @@ threshold:0.15
 
 }
 
-
 );
 
 
 
-elements.forEach(el=>{
+elements.forEach(element=>{
 
 
-observer.observe(el);
+element.classList.add("fade-in");
+
+observer.observe(element);
 
 
 });
-
-
-
-
-
-
-// Suppression automatique du chargement
-
-
-window.addEventListener(
-
-"load",
-
-()=>{
-
-
-let loader=document.querySelector(".loader");
-
-
-if(loader){
-
-loader.style.display="none";
-
-}
-
-
-}
-
-
-);
 
 
 
@@ -2138,9 +2004,619 @@ loader.style.display="none";
 
 
 
+<style>
+
+
+/* ===== BARRE DE DEFILEMENT PREMIUM ===== */
+
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
 
 
 
-</body>
+::-webkit-scrollbar-track{
 
-  </html>
+background:#17191f;
+
+}
+
+
+
+::-webkit-scrollbar-thumb{
+
+background:
+
+linear-gradient(
+#f5c542,
+#3b82f6
+);
+
+border-radius:20px;
+
+}
+
+
+
+
+/* ===== SELECTION TEXTE ===== */
+
+
+::selection{
+
+background:#f5c542;
+
+color:#17191f;
+
+}
+
+
+
+
+
+/* ===== CURSEUR SUR ELEMENTS IMPORTANTS ===== */
+
+
+.btn,
+.service-card,
+.galerie-card,
+.tarif-card,
+.avantage{
+
+cursor:pointer;
+
+}
+
+
+
+
+
+/* ===== PETIT EFFET SUR LES TITRES ===== */
+
+
+.section-title h2{
+
+position:relative;
+
+display:inline-block;
+
+}
+
+
+
+.section-title h2::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-10px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:70px;
+
+height:3px;
+
+background:#f5c542;
+
+border-radius:20px;
+
+}
+
+
+
+</style>
+
+
+
+<!-- ===== FIN PARTIE 6 ===== --><!-- ===== CONTACT SLYWORD ===== -->
+
+
+<section class="contact" id="contact">
+
+
+<div class="section-title">
+
+<h2>
+Contactez <span>SLYWORD</span>
+</h2>
+
+
+<p>
+Un projet ? Une idée ? Nous sommes disponibles.
+</p>
+
+</div>
+
+
+
+
+<div class="contact-container">
+
+
+
+<div class="contact-card">
+
+
+<h3>📲 WhatsApp</h3>
+
+<p>
+Passez votre commande rapidement.
+</p>
+
+<a href="#" class="contact-btn">
+Nous écrire
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="contact-card">
+
+
+<h3>📸 Création Visuelle</h3>
+
+<p>
+Retouches, designs, publicités et créations
+personnalisées.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="contact-card">
+
+
+<h3>🚀 SLYWORD</h3>
+
+<p>
+Donnez une nouvelle valeur à vos images.
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ===== FOOTER ===== -->
+
+
+<footer>
+
+
+<div class="footer-logo">
+
+SLYWORD
+
+</div>
+
+
+
+<p>
+
+Création digitale • Retouche photo • Design professionnel
+
+</p>
+
+
+
+<div class="footer-links">
+
+
+<a href="#">
+Facebook
+</a>
+
+
+<a href="#">
+WhatsApp
+</a>
+
+
+<a href="#">
+Galerie
+</a>
+
+
+</div>
+
+
+
+<p class="copyright">
+
+© 2026 SLYWORD - Tous droits réservés.
+
+</p>
+
+
+
+  </footer><style>
+
+/* ===== CONTACT DESIGN ===== */
+
+
+.contact{
+
+padding:100px 8%;
+
+background:
+
+linear-gradient(
+135deg,
+#222733,
+#171b23
+);
+
+}
+
+
+
+.contact-container{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+
+
+
+.contact-card{
+
+text-align:center;
+
+padding:35px 25px;
+
+background:
+
+rgba(255,255,255,0.08);
+
+border-radius:25px;
+
+border:1px solid rgba(245,197,66,0.25);
+
+transition:0.4s;
+
+}
+
+
+
+
+.contact-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#f5c542;
+
+}
+
+
+
+
+.contact-card h3{
+
+color:#f5c542;
+
+font-size:25px;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+.contact-card p{
+
+color:#eeeeee;
+
+line-height:1.6;
+
+margin-bottom:25px;
+
+}
+
+
+
+
+.contact-btn{
+
+display:inline-block;
+
+padding:14px 30px;
+
+border-radius:40px;
+
+background:
+
+linear-gradient(
+45deg,
+#f5c542,
+#ffe89a
+);
+
+color:#17191f;
+
+font-weight:bold;
+
+text-decoration:none;
+
+}
+
+
+
+
+/* ===== FOOTER ===== */
+
+
+
+footer{
+
+padding:50px 8%;
+
+text-align:center;
+
+background:#11141a;
+
+border-top:
+
+1px solid rgba(245,197,66,0.2);
+
+}
+
+
+
+
+.footer-logo{
+
+font-size:35px;
+
+font-weight:900;
+
+letter-spacing:3px;
+
+color:#f5c542;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+footer p{
+
+color:#cccccc;
+
+margin:15px 0;
+
+}
+
+
+
+
+.footer-links{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+
+
+
+.footer-links a{
+
+color:white;
+
+text-decoration:none;
+
+transition:0.3s;
+
+}
+
+
+
+.footer-links a:hover{
+
+color:#f5c542;
+
+}
+
+
+
+
+.copyright{
+
+font-size:14px;
+
+opacity:0.7;
+
+}
+
+
+
+
+/* TELEPHONE */
+
+
+@media(max-width:768px){
+
+
+.contact,
+footer{
+
+padding:70px 5%;
+
+}
+
+
+.footer-logo{
+
+font-size:28px;
+
+}
+
+
+}
+
+</style>
+
+
+
+<!-- ===== FIN PARTIE 7 ===== --><!-- ===== OPTIMISATION FINALE SLYWORD ===== -->
+
+
+<script>
+
+
+// Protection contre les images qui ne chargent pas
+
+const images =
+document.querySelectorAll("img");
+
+
+images.forEach(img=>{
+
+
+img.loading="lazy";
+
+
+img.onerror=function(){
+
+this.style.display="none";
+
+};
+
+
+});
+
+
+
+
+// Animation douce des liens du menu
+
+
+document
+.querySelectorAll("nav a")
+.forEach(link=>{
+
+
+link.addEventListener(
+"click",
+function(){
+
+
+window.scrollTo({
+
+behavior:"smooth"
+
+});
+
+
+});
+
+
+});
+
+
+
+
+</script>
+
+
+
+<style>
+
+
+/* ===== OPTIMISATION MOBILE ===== */
+
+
+img{
+
+max-width:100%;
+
+}
+
+
+
+
+button,
+a{
+
+-webkit-tap-highlight-color:transparent;
+
+}
+
+
+
+
+/* EVITE LES DEBORDEMENTS */
+
+section{
+
+overflow:hidden;
+
+}
+
+
+
+
+
+/* MEILLEURE LECTURE */
+
+p{
+
+letter-spacing:0.2px;
+
+}
+
+
+
+
+/* STYLE GENERAL PREMIUM */
+
+h1,h2,h3{
+
+font-weight:800;
+
+}
+
+
+
+</style>
+
+
+<!-- ===== FIN SLYWORD V3 ===== -->
